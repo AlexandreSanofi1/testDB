@@ -3,11 +3,16 @@ Check performance
 
 results for now :
 
+10k insertions :
+mongoDB = 17 seconds. (consistently)
+dynamoDB = 15 minutes. (consistently)
+
+
 mongoDB : allow for batch insertions of up to 1000 lines without any speed limitations.
 the numbers of insertions per batches appears to be only limited by ram memory allocated server side,
 but for this im not sure.
 
-that being said, everything went smoothly and fast.
+that being said, everything went smoothly and fast. 10k insertions by batches of 1000 took 17 seconds.
 
 
 dynamoDB : is already throttling request with 100 insertions let alone 1000 and 10k.
