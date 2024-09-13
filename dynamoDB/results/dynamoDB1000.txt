@@ -1,0 +1,17 @@
+alleonet@Alexandres-MBP codeDynamoDB % source venv/bin/activate
+(venv) alleonet@Alexandres-MBP codeDynamoDB % python3 test1000.py 
+100 items written to DynamoDB.
+200 items written to DynamoDB.
+300 items written to DynamoDB.
+400 items written to DynamoDB.
+500 items written to DynamoDB.
+600 items written to DynamoDB.
+700 items written to DynamoDB.
+800 items written to DynamoDB.
+900 items written to DynamoDB.
+1000 items written to DynamoDB.
+Start time: 2024-09-13 09:47:41
+End time: 2024-09-13 09:53:06
+Total time taken to insert 1000 items: 325.59 seconds
+
+

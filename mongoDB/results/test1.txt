@@ -1,0 +1,14 @@
+(myenv) alleonet@Alexandres-MBP mongoDB % python3 test1000.py
+100 items written to MongoDB.
+200 items written to MongoDB.
+300 items written to MongoDB.
+400 items written to MongoDB.
+500 items written to MongoDB.
+600 items written to MongoDB.
+700 items written to MongoDB.
+800 items written to MongoDB.
+900 items written to MongoDB.
+1000 items written to MongoDB.
+Start time: 2024-09-13 11:59:13
+End time: 2024-09-13 12:00:19
+Total time taken to insert 1000 items: 65.71 seconds

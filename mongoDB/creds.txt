@@ -1,0 +1,9 @@
+python -m pip install "pymongo[srv]"
+
+connection string :
+
+mongodb+srv://alexandreleonetti:fN0mThfuOIZTlIvw@sanofi0.xpy0y.mongodb.net/?retryWrites=true&w=majority&appName=sanofi0
+
+
+
+
