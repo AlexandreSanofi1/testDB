@@ -6,7 +6,7 @@ import time
 dynamodb = boto3.client('dynamodb')
 
 # Reference the table name
-table_name = 'testIndexPerf'
+table_name = 'testIndexPerf2'
 
 # Record the start time
 start_time = time.time()
@@ -20,7 +20,7 @@ print(f"Inserting 10,000 lines in batches of 25\n")
 for i in range(1, 10001):
     # Construct the item
     item = {
-        'TestID': {'S': str(i)},  # Unique identifier (partition key)
+        'date': {'S': str(i)},  # Unique identifier (partition key)
         'AttributeName': {'S': f'SampleAttribute{i}'},  # Example of dynamic attribute
         'TimeStamp': {'S': str(datetime.now())}  # Current timestamp
     }
@@ -44,7 +44,7 @@ for i in range(1, 10001):
         batch_items = []  # Clear the list after each batch
 
         # Add a delay between batch requests (start with 0.1 seconds and adjust if necessary)
-        time.sleep(0.5)  # 500ms delay
+        #time.sleep(0.01)  # 500ms delay
 
 # Insert any remaining items that weren't inserted in the last batch
 if batch_items:

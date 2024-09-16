@@ -1,0 +1,40 @@
+insert a single item, 1000 times :
+
+
+
+(venv) alleonet@Alexandres-MBP codeDynamoDB % python3 test1000.py 
+100 items written to DynamoDB.
+200 items written to DynamoDB.
+300 items written to DynamoDB.
+400 items written to DynamoDB.
+500 items written to DynamoDB.
+600 items written to DynamoDB.
+700 items written to DynamoDB.
+800 items written to DynamoDB.
+900 items written to DynamoDB.
+1000 items written to DynamoDB.
+Start time: 2024-09-13 13:52:14
+End time: 2024-09-13 13:58:09
+Total time taken to insert 1000 items: 355.27 seconds
+(venv) alleonet@Alexandres-MBP codeDynamoDB % cd ..
+(venv) alleonet@Alexandres-MBP TaskSANOFI % ls
+codeDynamoDB	dynaVSdocuDB	mongoDB
+(venv) alleonet@Alexandres-MBP TaskSANOFI % cd mongoDB 
+(venv) alleonet@Alexandres-MBP mongoDB % source myenv/bin/activate
+(myenv) alleonet@Alexandres-MBP mongoDB % ls    
+creds.txt	myenv		results		test1000.py
+(myenv) alleonet@Alexandres-MBP mongoDB % python3 test1000.py 
+100 items written to MongoDB.
+200 items written to MongoDB.
+300 items written to MongoDB.
+400 items written to MongoDB.
+500 items written to MongoDB.
+600 items written to MongoDB.
+700 items written to MongoDB.
+800 items written to MongoDB.
+900 items written to MongoDB.
+1000 items written to MongoDB.
+Start time: 2024-09-13 13:59:12
+End time: 2024-09-13 14:00:16
+Total time taken to insert 1000 items: 64.04 seconds
+(myenv) alleonet@Alexandres-MBP mongoDB % 
