@@ -1,5 +1,5 @@
 ### Performance Check
-*(10 million documents with 10 fields) -> Query time analysis*
+*(10 million documents with 20+ fields) -> Query time analysis*
 
 #### Current Results:
 - **10k Insertions:**
