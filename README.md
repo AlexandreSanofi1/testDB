@@ -8,6 +8,7 @@
   https://eu-north-1.console.aws.amazon.com/dynamodbv2/home?region=eu-north-1#table?name=test30Indexes
 
   - **with 20 indexes** : 10,000 items inserted in 80.90 seconds.
+  - **querying multiple indexes** : DynamoDB will generate error : "Error during multi-index query attempt"
 
   - **DocumentDB:** Only accessible via an EC2 instance or VPC/subnets. To access from elsewhere, port forwarding from an EC2 instance is required.
 
