@@ -4,7 +4,7 @@ import boto3
 dynamodb = boto3.client('dynamodb')
 
 # Table name
-table_name = 'test30Indexes'  # Replace with your table name
+table_name = 'test4'  # Replace with your table name
 
 def get_table_schema():
     try:

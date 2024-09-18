@@ -6,7 +6,7 @@ import time
 dynamodb = boto3.client('dynamodb')
 
 # Reference the table name
-table_name = 'test30Indexes'
+table_name = 'test4'
 
 # Record the start time
 start_time = time.time()
@@ -17,16 +17,16 @@ batch_items = []
 print(f"Inserting 10,000 lines in batches of 25\n")
 
 # Loop to create 10,000 items to insert into the DynamoDB table
-for i in range(1, 10001):
+for i in range(1, 100001):
     # Construct the item with attributes corresponding to each index
     
     item = {
         'TestID': {'S': str(i)},  # Unique identifier (partition key)
         'TimeStamp': {'S': str(datetime.now())},  # Current timestamp
-        'AttributeName': {'S': f'SampleAttribute{i}'},  # Example of dynamic attribute
+        'AttributeName': {'S': f'SampleAttribute'},  # Example of dynamic attribute
         # Add attributes for each GSI
         #**{f'GSI_Attribute_{j}': {'S': f'Value_{j}_{i}'} for j in range(1, 21)}
-        **{f'GSI_Attribute_{j}': {'N': str(i)} for j in range(1, 21)}
+        **{f'GSI_Attribute_{j}': {'N': str(i)} for j in range(1, 2)}
 
     }
 
