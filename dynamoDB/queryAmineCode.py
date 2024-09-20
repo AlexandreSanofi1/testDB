@@ -24,10 +24,7 @@ dynamodb.query(params, function(err, data) {
 
 """
 """
-hey chat, please use the above model,
-the code below must use a similar query as the code commented above, which is not even written in python.
-the code below has the correct table and fields name though, so please use them correctly.
-just make sure to replace the logic using the above model.
+
 """
 
 
