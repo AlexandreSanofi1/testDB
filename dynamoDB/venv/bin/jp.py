@@ -1,4 +1,4 @@
-#!/Users/alleonet/Documents/TaskSANOFI/dynamoDB/venv/bin/python3.12
+#!/Users/alleonet/Documents/2-DATABASES-TEST/dynamoDB/venv/bin/python3.12
 
 import sys
 import json
